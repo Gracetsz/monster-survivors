@@ -1,254 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Monster Survivors online - Fight endless waves of monsters in this thrilling survival game!">
-    <title>Monster Survivors - Epic Survival Game | AnimeFront</title>
-    <link rel="canonical" href="https://animefont.com/monster-survivors">
-    <style>
-        :root {
-            --apple-blue: #007aff;
-            --apple-gray: #f5f5f7;
-            --apple-dark: #1d1d1f;
-            --apple-green: #4cd964;
-            --apple-red: #ff3b30;
-            --container-width: 1200px;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        
-        body {
-            background-color: var(--apple-gray);
-            color: var(--apple-dark);
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: var(--container-width);
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background-color: var(--apple-dark);
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .main-content {
-            padding: 40px 0;
-        }
-        
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-align: center;
-            background: linear-gradient(to right, var(--apple-blue), var(--apple-green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        h2 {
-            font-size: 28px;
-            margin: 30px 0 15px;
-            color: var(--apple-blue);
-        }
-        
-        .tagline {
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: var(--apple-dark);
-        }
-        
-        .game-container {
-            position: relative;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            margin-bottom: 40px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        }
-        
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .game-info {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 40px;
-        }
-        
-        .game-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .feature-card {
-            background-color: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card h3 {
-            color: var(--apple-blue);
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-        
-        .cta-button {
-            display: block;
-            background-color: var(--apple-blue);
-            color: white;
-            text-align: center;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 30px auto;
-            max-width: 300px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            background-color: #0055b3;
-        }
-        
-        footer {
-            background-color: var(--apple-dark);
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        footer p {
-            margin: 10px 0;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 36px;
-            }
-            
-            h2 {
-                font-size: 24px;
-            }
-            
-            .tagline {
-                font-size: 18px;
-            }
-            
-            .game-container {
-                padding-top: 75%; /* Taller aspect ratio for mobile */
-            }
-            
-            .game-info, .feature-card {
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Chef - Fun Cooking Adventure Game | AnimeFont.com</title>
+  <meta name="description" content="Play Little Chef, a delightful cooking adventure where you prepare delicious dishes against the clock. Free to play online now!">
+  <link rel="canonical" href="https://animefont.com/games/little-chef">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --apple-blue: #007AFF;
+      --apple-green: #34C759;
+      --apple-orange: #FF9500;
+      --apple-red: #FF3B30;
+      --apple-grey: #8E8E93;
+      --apple-light-grey: #F2F2F7;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--apple-light-grey);
+      color: #333;
+    }
+    
+    .game-container {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 75%;
+      position: relative;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+    
+    .game-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+    
+    .header-gradient {
+      background: linear-gradient(135deg, var(--apple-blue), var(--apple-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .feature-card {
+      border-left: 4px solid var(--apple-blue);
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:nth-child(2) {
+      border-left-color: var(--apple-green);
+    }
+    
+    .feature-card:nth-child(3) {
+      border-left-color: var(--apple-orange);
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .chef-hat-icon {
+      color: var(--apple-orange);
+    }
+    
+    @media (max-width: 768px) {
+      .game-container {
+        padding-bottom: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="https://animefont.com" class="logo">AnimeFont</a>
-        </div>
+  <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header Section -->
+    <header class="mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-3 header-gradient">Little Chef</h1>
+      <p class="text-xl md:text-2xl text-gray-600 italic">A delightful cooking adventure where your culinary skills meet the clock!</p>
     </header>
     
-    <main class="container main-content">
-        <h1>Monster Survivors</h1>
-        <p class="tagline">Fight endless waves of monsters and survive in this thrilling roguelike adventure!</p>
-        
-        <div class="game-container">
-            <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.htm" allowfullscreen></iframe>
-        </div>
-        
-        <div class="game-info">
-            <h2>About Monster Survivors</h2>
-            <p>Monster Survivors is an action-packed survival game where you must face endless hordes of monsters. Collect power-ups, unlock new abilities, and see how long you can survive in this challenging roguelike experience.</p>
-            
-            <h2>How to Play</h2>
-            <p>Use WASD or arrow keys to move your character around the map. Your character attacks automatically, so focus on positioning yourself strategically to defeat enemies while avoiding damage. Collect experience orbs to level up and choose new abilities or upgrade existing ones.</p>
-        </div>
-        
-        <h2>Game Features</h2>
-        <div class="game-features">
-            <div class="feature-card">
-                <h3>Endless Gameplay</h3>
-                <p>Face increasingly difficult waves of monsters in an endless survival challenge. How long can you last?</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Character Development</h3>
-                <p>Level up your character, unlock new abilities, and customize your playstyle with unique upgrades and power-ups.</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Diverse Enemies</h3>
-                <p>Battle against a wide variety of monsters, each with their own attack patterns and behaviors.</p>
-            </div>
-        </div>
-        
-        <a href="#" class="cta-button" onclick="document.querySelector('.game-container').scrollIntoView({behavior: 'smooth'}); return false;">Play Now!</a>
-        
-        <div class="game-info">
-            <h2>Strategy Tips</h2>
-            <p>Monster Survivors rewards careful positioning and thoughtful ability selection. Here are some tips to help you survive longer:</p>
-            
-            <ul style="margin-left: 20px; margin-top: 10px;">
-                <li>Prioritize movement speed upgrades early to help you avoid enemies</li>
-                <li>Don't stand still – keep moving to avoid being surrounded</li>
-                <li>Choose complementary abilities that work well together</li>
-                <li>Focus on defeating weaker enemies first to clear space</li>
-            </ul>
-        </div>
-    </main>
+    <!-- Game Section -->
+    <section class="mb-16">
+      <div class="game-container bg-white p-2">
+        <iframe src="https://html-classic.itch.zone/html/8589309/ItchBuild_1.3/index.html" allowfullscreen></iframe>
+      </div>
+      <div class="text-center mt-4 text-sm text-gray-500">
+        <p>Game may take a few moments to load. For best experience, use full screen mode.</p>
+      </div>
+    </section>
     
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 AnimeFont.com - All Rights Reserved</p>
-            <p>Monster Survivors is an online action roguelike game</p>
+    <!-- Game Description -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--apple-blue);">About Little Chef</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <p class="mb-4 text-lg">Welcome to the charming world of <strong>Little Chef</strong>, where you'll step into the shoes of an aspiring culinary master! This fast-paced cooking game challenges your timing, precision, and multitasking abilities as you prepare various dishes against the ticking clock.</p>
+        <p class="mb-4 text-lg">Chop vegetables, grill meats, and plate up delicious masterpieces to satisfy your demanding customers. With each successful dish, you'll earn points and unlock new recipes and kitchen tools to expand your culinary repertoire.</p>
+        <p class="text-lg">Whether you're a seasoned gamer or just looking for a fun way to pass the time, Little Chef offers an engaging experience that's easy to learn but challenging to master.</p>
+      </div>
+    </section>
+    
+    <!-- Game Features -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--apple-green);">Game Features</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center mb-4">
+            <span class="chef-hat-icon text-2xl mr-2">👨‍🍳</span>
+            <h3 class="text-xl font-semibold">Multiple Recipes</h3>
+          </div>
+          <p>Master a variety of dishes from simple sandwiches to complex gourmet meals. Each recipe presents unique challenges and techniques.</p>
         </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center mb-4">
+            <span class="chef-hat-icon text-2xl mr-2">⏱️</span>
+            <h3 class="text-xl font-semibold">Time Management</h3>
+          </div>
+          <p>Test your multitasking skills as you juggle multiple orders with different preparation requirements while the clock ticks down.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-center mb-4">
+            <span class="chef-hat-icon text-2xl mr-2">🏆</span>
+            <h3 class="text-xl font-semibold">Level Progression</h3>
+          </div>
+          <p>Start as a novice and work your way up to becoming a master chef by completing increasingly challenging levels and earning high scores.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- How to Play -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--apple-orange);">How to Play</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <ul class="space-y-4">
+          <li class="flex">
+            <span class="font-bold mr-2">1.</span>
+            <p>Click or tap on ingredients to select them.</p>
+          </li>
+          <li class="flex">
+            <span class="font-bold mr-2">2.</span>
+            <p>Drag ingredients to appropriate cooking stations (cutting board, grill, pot, etc.).</p>
+          </li>
+          <li class="flex">
+            <span class="font-bold mr-2">3.</span>
+            <p>Follow recipe instructions and timing carefully to avoid burning or undercooking food.</p>
+          </li>
+          <li class="flex">
+            <span class="font-bold mr-2">4.</span>
+            <p>Plate the finished dishes and serve them to customers before time runs out.</p>
+          </li>
+          <li class="flex">
+            <span class="font-bold mr-2">5.</span>
+            <p>Earn points for successful dishes and lose points for mistakes or slow service.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Tips and Tricks -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-center" style="color: var(--apple-red);">Tips for Success</h2>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <p class="mb-4">Want to become the ultimate Little Chef? Here are some tips to help you excel:</p>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <span class="text-green-500 mr-2">✓</span>
+            <p>Prioritize orders based on preparation time and complexity.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-2">✓</span>
+            <p>Use keyboard shortcuts (shown in the tutorial) to speed up actions.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-2">✓</span>
+            <p>Set up your work area efficiently by preparing ingredients in advance.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-2">✓</span>
+            <p>Keep an eye on cooking timers to prevent burning dishes.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-2">✓</span>
+            <p>Practice makes perfect - replay earlier levels to master techniques before progressing.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm pt-8 pb-12 border-t border-gray-200">
+      <p>&copy; 2025 AnimeFont.com - All rights reserved</p>
+      <p class="mt-2">Little Chef game is available exclusively on AnimeFont.com</p>
     </footer>
+  </div>
 </body>
 </html>
