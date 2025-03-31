@@ -3,181 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Survive the Horde in this Action-Packed Game</title>
-    <meta name="description" content="Play Monster Survivors online for free - an action-packed survival game where you fight endless waves of monsters with unique abilities and power-ups.">
-    <link rel="canonical" href="https://monstersurvivors.com">
-    
+    <meta name="description" content="Play Monster Survivors online - Fight endless waves of monsters in this thrilling survival game!">
+    <title>Monster Survivors - Epic Survival Game | AnimeFront</title>
+    <link rel="canonical" href="https://animefont.com/monster-survivors">
     <style>
         :root {
-            --apple-blue: #007AFF;
-            --apple-green: #34C759;
-            --apple-indigo: #5856D6;
-            --apple-orange: #FF9500;
-            --apple-pink: #FF2D55;
-            --apple-purple: #AF52DE;
-            --apple-red: #FF3B30;
-            --apple-teal: #5AC8FA;
-            --apple-yellow: #FFCC00;
-            --apple-gray: #8E8E93;
-            --apple-gray2: #AEAEB2;
-            --apple-gray3: #C7C7CC;
-            --apple-gray4: #D1D1D6;
-            --apple-gray5: #E5E5EA;
-            --apple-gray6: #F2F2F7;
-            --apple-dark-background: #1C1C1E;
-            --apple-light-background: #F2F2F7;
+            --apple-blue: #007aff;
+            --apple-gray: #f5f5f7;
+            --apple-dark: #1d1d1f;
+            --apple-green: #4cd964;
+            --apple-red: #ff3b30;
+            --container-width: 1200px;
         }
-
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-
+        
         body {
-            background-color: var(--apple-light-background);
-            color: #333;
+            background-color: var(--apple-gray);
+            color: var(--apple-dark);
             line-height: 1.6;
         }
-
+        
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: var(--container-width);
             margin: 0 auto;
             padding: 0 20px;
         }
-
+        
         header {
-            background-color: var(--apple-indigo);
+            background-color: var(--apple-dark);
             color: white;
             padding: 20px 0;
-            text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            font-weight: 700;
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            font-weight: 300;
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
         }
-
+        
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+            background: linear-gradient(to right, var(--apple-blue), var(--apple-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin: 30px 0 15px;
+            color: var(--apple-blue);
+        }
+        
+        .tagline {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: var(--apple-dark);
+        }
+        
         .game-container {
-            margin: 30px 0;
-            background-color: white;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            margin-bottom: 40px;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
-
-        .game-frame {
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 600px;
+            height: 100%;
             border: none;
         }
-
+        
         .game-info {
+            background-color: white;
             padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
         }
-
-        h2 {
-            color: var(--apple-indigo);
-            margin: 20px 0 15px;
-            font-size: 1.8rem;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        .features {
+        
+        .game-features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
         }
-
-        .feature {
+        
+        .feature-card {
             background-color: white;
             padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
         }
-
-        .feature:hover {
+        
+        .feature-card:hover {
             transform: translateY(-5px);
         }
-
-        .feature h3 {
+        
+        .feature-card h3 {
             color: var(--apple-blue);
             margin-bottom: 10px;
-            font-size: 1.4rem;
+            font-size: 20px;
         }
-
-        .cta {
-            background-color: var(--apple-green);
+        
+        .cta-button {
+            display: block;
+            background-color: var(--apple-blue);
             color: white;
             text-align: center;
-            padding: 40px 20px;
-            margin: 40px 0;
-            border-radius: 12px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 30px auto;
+            max-width: 300px;
+            transition: background-color 0.3s ease;
         }
-
-        .cta h2 {
-            color: white;
+        
+        .cta-button:hover {
+            background-color: #0055b3;
         }
-
+        
         footer {
-            background-color: var(--apple-dark-background);
+            background-color: var(--apple-dark);
             color: white;
+            padding: 40px 0;
             text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
         }
-
+        
         footer p {
-            margin: 5px 0;
+            margin: 10px 0;
         }
-
+        
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
+            h1 {
+                font-size: 36px;
             }
-
-            header p {
-                font-size: 1rem;
-                padding: 0 15px;
-            }
-
-            .game-frame {
-                height: 400px;
-            }
-
-            .game-info {
-                padding: 20px;
-            }
-
+            
             h2 {
-                font-size: 1.5rem;
+                font-size: 24px;
             }
-        }
-
-        @media (max-width: 480px) {
-            .game-frame {
-                height: 300px;
+            
+            .tagline {
+                font-size: 18px;
             }
-
-            .feature {
-                padding: 15px;
+            
+            .game-container {
+                padding-top: 75%; /* Taller aspect ratio for mobile */
+            }
+            
+            .game-info, .feature-card {
+                padding: 20px;
             }
         }
     </style>
@@ -185,57 +191,63 @@
 <body>
     <header>
         <div class="container">
-            <h1>Monster Survivors</h1>
-            <p>Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+            <a href="https://animefont.com" class="logo">AnimeFont</a>
         </div>
     </header>
-
-    <main class="container">
-        <section class="game-container">
-            <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.htm" class="game-frame" title="Play Monster Survivors Game" allowfullscreen></iframe>
-        </section>
-
-        <section class="game-info">
+    
+    <main class="container main-content">
+        <h1>Monster Survivors</h1>
+        <p class="tagline">Fight endless waves of monsters and survive in this thrilling roguelike adventure!</p>
+        
+        <div class="game-container">
+            <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.htm" allowfullscreen></iframe>
+        </div>
+        
+        <div class="game-info">
             <h2>About Monster Survivors</h2>
-            <p>Monster Survivors is an intense survival action game where your goal is simple: stay alive as long as possible against increasingly difficult waves of monsters. Choose your character, collect power-ups, and fight your way through hordes of creatures that want nothing more than to end your run.</p>
+            <p>Monster Survivors is an action-packed survival game where you must face endless hordes of monsters. Collect power-ups, unlock new abilities, and see how long you can survive in this challenging roguelike experience.</p>
             
             <h2>How to Play</h2>
-            <p>Movement is automatic in Monster Survivors. Your character will continuously attack nearby enemies while you focus on navigating the dangerous battlefield. Collect experience gems to level up and choose new abilities or upgrade existing ones. The longer you survive, the stronger the monsters become!</p>
-            
-            <div class="features">
-                <div class="feature">
-                    <h3>Unique Characters</h3>
-                    <p>Choose from multiple characters, each with their own starting weapons and special abilities that dramatically change your gameplay experience.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>Power-Up System</h3>
-                    <p>Collect a wide variety of weapons and passive items to create powerful synergies. Build your character's strength through strategic power-up choices.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>Endless Challenge</h3>
-                    <p>Test your skills against increasingly difficult waves of monsters. How long can you survive in this challenging roguelike experience?</p>
-                </div>
+            <p>Use WASD or arrow keys to move your character around the map. Your character attacks automatically, so focus on positioning yourself strategically to defeat enemies while avoiding damage. Collect experience orbs to level up and choose new abilities or upgrade existing ones.</p>
+        </div>
+        
+        <h2>Game Features</h2>
+        <div class="game-features">
+            <div class="feature-card">
+                <h3>Endless Gameplay</h3>
+                <p>Face increasingly difficult waves of monsters in an endless survival challenge. How long can you last?</p>
             </div>
             
-            <h2>Game Tips</h2>
-            <p>Focus on movement rather than attacking, as your character attacks automatically. Prioritize collecting experience gems to level up quickly. Don't get cornered by monsters - always leave yourself an escape route. Some weapon combinations are more effective than others, so experiment with different builds to find what works best for your playstyle.</p>
-            
-            <div class="cta">
-                <h2>Ready to Test Your Survival Skills?</h2>
-                <p>Jump into the action above and see how long you can last against the monster hordes!</p>
+            <div class="feature-card">
+                <h3>Character Development</h3>
+                <p>Level up your character, unlock new abilities, and customize your playstyle with unique upgrades and power-ups.</p>
             </div>
             
-            <h2>System Requirements</h2>
-            <p>Monster Survivors is a browser-based game that runs smoothly on most devices. For the best experience, we recommend using an updated browser like Chrome, Firefox, or Safari. The game supports both keyboard and touch controls, making it perfectly playable on desktop computers, tablets, and mobile phones.</p>
-        </section>
+            <div class="feature-card">
+                <h3>Diverse Enemies</h3>
+                <p>Battle against a wide variety of monsters, each with their own attack patterns and behaviors.</p>
+            </div>
+        </div>
+        
+        <a href="#" class="cta-button" onclick="document.querySelector('.game-container').scrollIntoView({behavior: 'smooth'}); return false;">Play Now!</a>
+        
+        <div class="game-info">
+            <h2>Strategy Tips</h2>
+            <p>Monster Survivors rewards careful positioning and thoughtful ability selection. Here are some tips to help you survive longer:</p>
+            
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Prioritize movement speed upgrades early to help you avoid enemies</li>
+                <li>Don't stand still – keep moving to avoid being surrounded</li>
+                <li>Choose complementary abilities that work well together</li>
+                <li>Focus on defeating weaker enemies first to clear space</li>
+            </ul>
+        </div>
     </main>
-
+    
     <footer>
         <div class="container">
-            <p>&copy; 2025 Monster Survivors. All rights reserved.</p>
-            <p>Play monster survival games online at MonsterSurvivors.com</p>
+            <p>&copy; 2025 AnimeFont.com - All Rights Reserved</p>
+            <p>Monster Survivors is an online action roguelike game</p>
         </div>
     </footer>
 </body>
